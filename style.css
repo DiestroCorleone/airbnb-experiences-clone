@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+.nav{
+    padding: 1rem;
+    box-shadow: 0px 3px 8px gainsboro;
+}
+
+.nav img{
+    width: 82px;
+    height: auto;
+}
+
+.hero{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+
+.hero p{
+    font-size: 0.9rem;
+}
+
+.card-list{
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 1rem;
+}
+
+.card{
+    width: 175px;
+    font-size: 12px;
+    flex: 0 0 auto;/* Stops the element from changing size relative to the other flex elements in group. */   
+}
+
+.card-img-container{
+    position: relative;
+    text-align: center;
+}
+
+.card-img{
+    width: 100%;
+    height: auto;    
+    border-radius: 8px;
+}
+
+.open-spots{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.card-score-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-score-div p::before{
+    content: " ";
+    white-space: pre;
+}
+
+.star{
+    width: 12px;
+    height: 12px;
+}
+
+.review-count{
+    color: grey;
+}
+
+.review-count::after{
+    content: " · ";
+}
+
+.location{
+    color: grey;
+}
+
+.experience-description{
+    margin-top: 0px;
+    font-size: 0.8rem;
+}
+
+.experience-price{    
+    font-size: 0.8rem;
+}
+
+.experience-price::after{
+    content: " / person";
+}
